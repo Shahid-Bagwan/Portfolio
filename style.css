@@ -1,4 +1,95 @@
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  padding: 0;
+}
+
+header {
+  background-color: #3c3c3c;
+}
+
+/* removed bullet point */
+ul {
+  list-style-type: none;
+}
+
+@media only screen and (min-width: 375px) {
+  /* header section */
+  .navbar {
+    display: flex;
+  }
+
+  /* aligned th image to left */
+  .img2 {
+    margin-left: auto;
+  }
+
+  /* main section css */
+  .description_section {
+    background-color: #1c1a19;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    height: 590px;
+    align-content: center;
+    position: relative;
+  }
+
+  .h1_heading {
+    font-size: 3.5rem;
+    color: #ff6b00;
+    font-family: 'Crete Round', serif;
+    font-style: normal;
+    font-weight: 100;
+    margin: 0 0 10px 16px;
+    width: fit-content;
+  }
+
+  .h3_heading {
+    color: white;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin: 0 0 10px 16px;
+  }
+
+  .paragraph {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    word-wrap: break-word;
+    color: white;
+    margin: 0 0 10px 16px;
+    width: 375px;
+  }
+
+  .social {
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+  }
+
+  .fa-brands {
+    font-size: 1.5rem; /* Increase the font size as desired */
+  }
+
+  .fa-instagram {
+    margin: 0;
+    padding: 0;
+  }
+
+  .image_container {
+    position: absolute;
+    bottom: 0;
+    right: -3px;
+    margin: 10px;
+  }
+
+  .image_container img {
+    max-width: 100%;
+    height: auto;
+  }
 }
