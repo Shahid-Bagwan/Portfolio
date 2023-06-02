@@ -18,6 +18,13 @@ ul {
 
 @media only screen and (min-width: 375px) {
   /* header section */
+  .header_1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 23px;
+  }
+
   .navbar {
     display: flex;
   }
@@ -62,7 +69,7 @@ ul {
     font-family: 'Poppins', sans-serif;
     word-wrap: break-word;
     color: white;
-    margin: 0 0 10px 16px;
+    margin: 0 0 0 16px;
     width: 375px;
   }
 
@@ -70,21 +77,18 @@ ul {
     display: flex;
     width: 200px;
     justify-content: space-around;
+    padding: 0 0 0 18px;
   }
 
-  .fa-brands {
-    font-size: 1.5rem; /* Increase the font size as desired */
+  .logo {
+    width: 1.5rem; /* Increase the font size as desired */
     color: white;
-  }
-
-  .fa-instagram {
-    margin: 0;
-    padding: 0;
+    text-decoration: none;
   }
 
   .image_container {
     position: absolute;
-    bottom: 0;
+    bottom: -56px;
     right: -3px;
     margin: 10px;
   }
