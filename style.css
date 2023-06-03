@@ -80,12 +80,14 @@ ul {
     padding: 0 0 0 18px;
   }
 
+  /* social media logos */
   .logo {
     width: 1.5rem; /* Increase the font size as desired */
     color: white;
     text-decoration: none;
   }
 
+  /* image object */
   .image_container {
     position: absolute;
     bottom: -56px;
@@ -96,5 +98,211 @@ ul {
   .image_container img {
     max-width: 100%;
     height: auto;
+  }
+
+  /* main section */
+
+  .work_section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    background-color: white;
+    height: 100%;
+    row-gap: 1.625rem;
+    margin-bottom: 3%;
+  }
+
+  .work_section_title {
+    margin: 24% 0 10% 0;
+  }
+
+  /* styled the first box diffrently cause it did not had a bg img */
+  .first_box {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+    width: 375px;
+    height: 590px;
+    margin: 0 0 0 0;
+  }
+
+  .first_box h2 {
+    font-size: 1.5rem;
+    font-family: 'Crete Round', serif;
+    font-style: normal;
+    font-weight: 100;
+    margin: 4% auto 0 7%;
+  }
+
+  .first_box p {
+    width: 88%;
+    padding-left: 1%;
+  }
+
+  .first_box_lang {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    margin-left: -14%;
+  }
+
+  .first_box_button {
+    margin-right: auto;
+    margin-top: -2%;
+    background: #ff6b00;
+    width: 34%;
+    height: 6%;
+    color: white;
+    margin-left: 6%;
+  }
+
+  .box {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    word-wrap: break-word;
+    width: 20.438rem;
+    height: 24.125rem;
+    margin: 0 0 0 0;
+    background-image: url(resources/bg.png);
+    background-size: cover;
+    color: white;
+    padding-top: 10%;
+  }
+
+  .box h2 {
+    font-size: 1.5rem;
+    font-family: 'Crete Round', serif;
+    font-style: normal;
+    font-weight: 100;
+    margin: 32% 0 0 5%;
+  }
+
+  .box p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    width: 88%;
+    padding-left: 5%;
+  }
+
+  .lang_used {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin-top: 5%;
+    margin-bottom: -20%;
+  }
+
+  .box button {
+    margin-top: auto;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    background: #ff6b00;
+    width: 100%;
+    height: 3rem;
+    color: white;
+  }
+
+  /* about section */
+  .about {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: #1c1a19;
+    height: 100%;
+    row-gap: 1.625rem;
+    margin-bottom: 0;
+  }
+
+  .about_section {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    height: 26.188rem;
+  }
+
+  .h1_about {
+    font-size: 3.5rem;
+    color: #ff6b00;
+    font-family: 'Crete Round', serif;
+    font-style: normal;
+    font-weight: 100;
+    margin: 0 0 10px 16px;
+    width: fit-content;
+  }
+
+  .about_paragraph {
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    word-wrap: break-word;
+    color: white;
+    margin: 0 0 0 16px;
+    width: 375px;
+  }
+
+  .about_box_button {
+    margin-top: 5%;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    background: #ff6b00;
+    width: 43%;
+    height: 14%;
+    color: white;
+    margin-left: 3%;
+  }
+
+  /* image object */
+  .about_image_container {
+    position: relative;
+  }
+
+  .png {
+    position: absolute;
+    bottom: -193px;
+    right: 0;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .divider {
+    align-self: center;
+    position: relative;
+    bottom: -196px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .skills {
+    padding-top: 40%;
+  }
+
+  .check {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .check img {
+    margin-left: 47px;
+  }
+
+  .ul_list {
+    color: white;
+    margin-left: 0%;
+    text-align: center;
+  }
+
+  .ul_list li {
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    list-style: none;
+    margin-bottom: 24%;
+    margin-top: 8%;
   }
 }
