@@ -16,8 +16,21 @@ ul {
   list-style-type: none;
 }
 
+hr {
+  background: black;
+  width: 20.313rem;
+}
+
 @media only screen and (min-width: 375px) {
   /* header section */
+  .heading_title {
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+  }
+
   .header_1 {
     display: flex;
     justify-content: space-between;
@@ -32,6 +45,10 @@ ul {
   /* aligned th image to left */
   .img2 {
     margin-left: auto;
+  }
+
+  .Second_part {
+    margin: 0 0 8.188rem 0;
   }
 
   /* main section css */
@@ -114,6 +131,9 @@ ul {
 
   .work_section_title {
     margin: 24% 0 10% 0;
+    font-family: 'Crete Round', serif;
+    font-style: normal;
+    font-size: 2.5rem;
   }
 
   /* styled the first box diffrently cause it did not had a bg img */
@@ -129,35 +149,79 @@ ul {
   }
 
   .first_box h2 {
-    font-size: 1.5rem;
-    font-family: 'Crete Round', serif;
+    font-family: 'Crete Round ', serif;
     font-style: normal;
-    font-weight: 100;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
     margin: 4% auto 0 7%;
+    color: #091e42;
   }
 
   .first_box p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #091e42;
     width: 88%;
     padding-left: 1%;
+    margin-top: 4px;
   }
 
   .first_box_lang {
     display: flex;
     flex-flow: row;
-    justify-content: space-around;
+    width: 95%;
     margin-top: 1%;
     margin-bottom: 4%;
-    margin-left: -14%;
+    margin-left: -8%;
+  }
+
+  .first_box_lang li {
+    background-color: transparent;
+    color: black;
+    width: fit-content;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0 11px 0 0;
+    font-family: 'Inter', sans-serif;
   }
 
   .first_box_button {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
     margin-right: auto;
-    margin-top: -2%;
+    margin-top: -1%;
     background: #ff6b00;
     width: 34%;
-    height: 6%;
+    height: 8%;
     color: white;
     margin-left: 6%;
+    border: 0;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  /* Hover state */
+  .first_box_button:hover {
+    color: #ff6b00;
+    background-color: antiquewhite;
+    border: 1px solid #ff6b00;
+  }
+
+  /* Pressed state */
+  .first_box_button:active {
+    background: #c65504;
+    color: white;
+  }
+
+  /* Disabled state */
+  .first_box_button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
   }
 
   .box {
@@ -175,16 +239,22 @@ ul {
   }
 
   .box h2 {
-    font-size: 1.5rem;
+    font-size: 32px;
     font-family: 'Crete Round', serif;
     font-style: normal;
-    font-weight: 100;
-    margin: 32% 0 0 5%;
+    font-weight: 400;
+    line-height: 44px;
+    margin: 16% 0 0 5%;
+    color: white;
   }
 
   .box p {
     font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
+    line-height: 24px;
+    color: white;
     width: 88%;
     padding-left: 5%;
   }
@@ -192,9 +262,16 @@ ul {
   .lang_used {
     display: flex;
     flex-flow: row;
-    justify-content: space-around;
-    margin-top: 5%;
-    margin-bottom: -20%;
+    padding: 0%;
+    margin: 9px;
+  }
+
+  .lang_used li {
+    font-family: 'Inter', sans-serif;
+    background-color: rgba(255, 255, 255, 0.201);
+    color: white;
+    padding: 10px;
+    margin: 0 0 5px 8px;
   }
 
   .box button {
@@ -206,6 +283,26 @@ ul {
     width: 100%;
     height: 3rem;
     color: white;
+    border: 0;
+  }
+
+  /* Hover state */
+  .box button:hover {
+    color: #ff6b00;
+    background-color: antiquewhite;
+    border: 1px solid #ff6b00;
+  }
+
+  /* Pressed state */
+  .box button:active {
+    background: #c65504;
+    color: white;
+  }
+
+  /* Disabled state */
+  .box button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
   }
 
   /* about section */
@@ -223,14 +320,17 @@ ul {
     flex-flow: column;
     justify-content: center;
     height: 26.188rem;
+    margin: 4.75rem 0 0 1.188rem;
   }
 
   .h1_about {
-    font-size: 3.5rem;
     color: #ff6b00;
     font-family: 'Crete Round', serif;
+    font-size: 72px;
     font-style: normal;
-    font-weight: 100;
+    line-height: 88px;
+    letter-spacing: 0.37px;
+    font-weight: 400;
     margin: 0 0 10px 16px;
     width: fit-content;
   }
@@ -241,7 +341,8 @@ ul {
     word-wrap: break-word;
     color: white;
     margin: 0 0 0 16px;
-    width: 375px;
+    width: 327px;
+    height: 148px;
   }
 
   .about_box_button {
@@ -253,7 +354,27 @@ ul {
     width: 43%;
     height: 14%;
     color: white;
-    margin-left: 3%;
+    margin-left: 4%;
+    border: 0;
+  }
+
+  /* Hover state */
+  .about_box_button:hover {
+    color: #ff6b00;
+    background-color: antiquewhite;
+    border: 1px solid #ff6b00;
+  }
+
+  /* Pressed state */
+  .about_box_button:active {
+    background: #c65504;
+    color: white;
+  }
+
+  /* Disabled state */
+  .about_box_button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
   }
 
   /* image object */
@@ -263,7 +384,7 @@ ul {
 
   .png {
     position: absolute;
-    bottom: -193px;
+    bottom: -203px;
     right: 0;
     max-width: 100%;
     height: auto;
@@ -272,13 +393,13 @@ ul {
   .divider {
     align-self: center;
     position: relative;
-    bottom: -196px;
+    bottom: -201px;
     max-width: 100%;
     height: auto;
   }
 
   .skills {
-    padding-top: 40%;
+    padding-top: 58%;
   }
 
   .check {
@@ -286,6 +407,7 @@ ul {
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    margin: 0 0 -1.625rem 0;
   }
 
   .check img {
@@ -293,8 +415,10 @@ ul {
   }
 
   .ul_list {
+    margin: 3px 0 0 0;
     color: white;
     margin-left: 0%;
+    padding-left: 19px;
     text-align: center;
   }
 
@@ -304,5 +428,12 @@ ul {
     list-style: none;
     margin-bottom: 24%;
     margin-top: 8%;
+  }
+
+  .skills_heading {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
   }
 }
