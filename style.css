@@ -430,6 +430,10 @@ hr {
     margin-top: 8%;
   }
 
+  .fa-xs {
+    color: #ff6b00;
+  }
+
   .skills_heading {
     font-family: 'Inter', sans-serif;
     font-size: 32px;
