@@ -307,8 +307,8 @@ hr {
 
   /* about section */
   .about {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+    display: flex;
     background-color: #1c1a19;
     height: 100%;
     row-gap: 1.625rem;
