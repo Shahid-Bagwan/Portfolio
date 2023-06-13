@@ -23,7 +23,6 @@
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 [Portfolio] <a name="about-project"></a>
-# 📖 [Portfolio] <a name="about-project"></a>
 
 A website developed to showcase skills and projects done. 
 
