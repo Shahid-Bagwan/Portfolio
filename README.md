@@ -22,7 +22,8 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Perosnal Portfolio] <a name="about-project"></a>
+# 📖 [Portfolio] <a name="about-project"></a>
+# 📖 [Portfolio] <a name="about-project"></a>
 
 A website developed to showcase skills and projects done. 
 
@@ -59,6 +60,7 @@ A website developed to showcase skills and projects done.
 
 - **[Name of the developer]**
 - **[Description of developer]**
+- **[contact section]**
 - **[Links to social media account]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
