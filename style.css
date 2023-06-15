@@ -138,8 +138,8 @@ ul {
     order: 3;
     position: absolute;
     top: -7px;
-    right: -45px;
-    margin: 10px;
+    right: 0;
+    margin: 10px 0 0 0;
     z-index: 2;
     width: 40%;
     height: 100%;
