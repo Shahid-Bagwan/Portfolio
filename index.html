@@ -20,7 +20,13 @@
     <header class="header_1">
         <h1 class="heading_title">My Logo</h1>
         <nav class="navbar">
-            <img class="img2" src="resources/menu.png" alt="Menu Icon">
+            <ul class="item-navigation hidden_mobile">
+                <li><a href="#">Portofilio</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#"><img src="resources/Icon - Mail.png" alt="Mail Icon"></a></li>
+            </ul>
+            <img class="img2 hidden_desktop" src="resources/menu.png" alt="Menu Icon">
         </nav>
     </header>
 
@@ -28,36 +34,69 @@
     <main>
         <section>
             <div class="description_section">
-                <h1 class="h1_heading">Hey There.<br>
-                    I’m Alex.</h1>
-                <h3 class="h3_heading">I'm a Software Developer</h3>
-                <p class="paragraph">I can help you build a product , feature or website Look through some of my work
-                    and
-                    experience! If you like what you see and have a project you need coded,don’t hesitate to contact me.
-                </p>
-                <div>
+                <div class="headline">
+                    <h1 class="h1_heading">Hey There.<br>
+                        I’m Alex.</h1>
+                    <h3 class="h3_heading">I'm a Software Developer</h3>
+                    <p class="paragraph">I can help you build a product , feature or website Look
+                        through some of my work and experience! If you like what
+                        you see and have a project you need coded,
+                        don’t hesitate to contact me.
+                    </p>
+                </div>
+                <div class="social-media-icons">
                     <ul class="social">
                         <li class="lists"><a href="#"> <img src="./resources/logo1.png" alt="logo"> </a></li>
                         <li class="lists"><a href="#"> <img src="./resources/logo2.png" alt="logo"> </a></li>
                         <li class="lists"><a href="#"> <img src="./resources/logo3.png" alt="logo"> </a></li>
-                        <li class="lists"><a href="#"> <img src="./resources/logo4.png" alt="logo"> </a>></li>
+                        <li class="lists"><a href="#"> <img src="./resources/logo4.png" alt="logo"> </a></li>
                         <li class="lists"><a href="#"> <img src="./resources/logo5.png" alt="logo"> </a></li>
                     </ul>
                 </div>
                 <div class="image_container">
-                    <img src="resources/Illustration.png" alt="image">
+                    <img id="desktop_v_img" src="resources/Illustration-header.svg" class="hidden_mobile" alt="">
+                    <img src="resources/Illustration.png" class="hidden_desktop" alt="image">
                 </div>
             </div>
         </section>
         <div class="Second_part">
             <section class="work_section">
-                <h2 class="work_section_title">My Recent Works </h2>
-                <hr>
+                <div class="w-s">
+                    <h2 class="work_section_title">My Recent Works </h2>
+                    <hr class="title-line">
+                </div>
                 <div class="first_box">
-                    <img src="resources/Img Placeholder.png" alt="Project Image">
-                    <h2>Multi-Post Stories</h2>
-                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-                    <div >
+                    <!-- desktop code -->
+                    <div class="first-box-img hidden_mobile">
+                        <img src="./resources/Img Placeholder.svg" alt="Project Image">
+                    </div>
+                    <div class="first-box-text hidden_mobile">
+                        <h2>Multi-Post Stories</h2>
+                        <p>A daily selection of privately personalized reads; no accounts or sign-ups required. this has
+                            been the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a standard
+                            dummy text.</p>
+                        <div>
+                            <ul class="first_box_lang">
+                                <li>CSS</li>
+                                <li>HTML</li>
+                                <li>Bootstrap</li>
+                                <li>Ruby</li>
+                            </ul>
+                        </div>
+                        <button type="button" class="first_box_button">See project</button>
+                    </div>
+
+                    <!-- mobile code -->
+                    <!-- had to make the desktop code diffrent cause it was causing design issue's
+                        and one of senior told me to do it this way.
+                    -->
+                    <img class="hidden_desktop" src="resources/Img Placeholder.png" alt="">
+                    <h2 class="hidden_desktop">Multi-Post Stories</h2>
+                    <p class="hidden_desktop">A daily selection of privately personalized reads; no accounts or sign-ups
+                        required. has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        printer took a standard dummy text.</p>
+                    <div class="hidden_desktop">
                         <ul class="first_box_lang">
                             <li>CSS</li>
                             <li>HTML</li>
@@ -65,31 +104,16 @@
                             <li>Ruby</li>
                         </ul>
                     </div>
-                    <button type="button" class="first_box_button">See project</button>
+                    <button type="button" class="first_box_button hidden_desktop">See project</button>
                 </div>
 
-                <div class="box">
-                    <h2>Profesional Art <br>
+                <div class="box box1">
+                    <h2 class="hidden_desktop">Profesional Art <br>
                         Printing Data</h2>
-                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the
+                    <p class="hidden_desktop">A daily selection of privately personalized reads; no accounts or sign-ups
+                        required. Has been the
                         industry's standard.</p>
-                    <div >
-                        <ul class="lang_used">
-                            <li>HTML</li>
-                            <li>Bootstrap</li>
-                            <li>Ruby</li>
-                        </ul>
-                        
-                    </div>
-                    <button type="button">See project</button>
-                </div>
-
-                <div class="box">
-                    <h2>Profesional Art <br>
-                        Printing Data</h2>
-                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the
-                        industry's standard.</p>
-                    <div>
+                    <div class="hidden_desktop">
                         <ul class="lang_used">
                             <li>HTML</li>
                             <li>Bootstrap</li>
@@ -99,7 +123,7 @@
                     <button type="button">See project</button>
                 </div>
 
-                <div class="box">
+                <div class="box box2">
                     <h2>Profesional Art <br>
                         Printing Data</h2>
                     <p>A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the
@@ -111,73 +135,94 @@
                             <li>Ruby</li>
                         </ul>
                     </div>
-                    <button type="button">See project</button>
+                    <button class="hidden_desktop" type="button">See project</button>
                 </div>
 
-                <div class="box">
+                <div class="box box3">
                     <h2>Profesional Art <br>
                         Printing Data</h2>
                     <p>A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the
                         industry's standard.</p>
-                    <div >
+                    <div>
                         <ul class="lang_used">
                             <li>HTML</li>
                             <li>Bootstrap</li>
                             <li>Ruby</li>
                         </ul>
                     </div>
-                    <button type="button">See project</button>
+                    <button class="hidden_desktop" type="button">See project</button>
                 </div>
 
-                <div class="box">
+                <div class="box box4">
                     <h2>Profesional Art <br>
                         Printing Data</h2>
                     <p>A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the
                         industry's standard.</p>
-                    <div >
+                    <div>
                         <ul class="lang_used">
                             <li>HTML</li>
                             <li>Bootstrap</li>
                             <li>Ruby</li>
                         </ul>
                     </div>
-                    <button type="button">See project</button>
+                    <button class="hidden_desktop" type="button">See project</button>
                 </div>
 
-                <div class="box">
+                <div class="box box5">
                     <h2>Profesional Art <br>
                         Printing Data</h2>
                     <p>A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the
                         industry's standard.</p>
-                    <div >
+                    <div>
                         <ul class="lang_used">
                             <li>HTML</li>
                             <li>Bootstrap</li>
                             <li>Ruby</li>
                         </ul>
                     </div>
-                    <button type="button">See project</button>
+                    <button class="hidden_desktop" type="button">See project</button>
                 </div>
-            </section >
+
+                <div class="box box6">
+                    <h2>Profesional Art <br>
+                        Printing Data</h2>
+                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the
+                        industry's standard.</p>
+                    <div>
+                        <ul class="lang_used">
+                            <li>HTML</li>
+                            <li>Bootstrap</li>
+                            <li>Ruby</li>
+                        </ul>
+                    </div>
+                    <button class="hidden_desktop" type="button">See project</button>
+                </div>
+            </section>
         </div>
 
         <section class="about">
             <div class="about_section">
                 <h2 class="h1_about">About me</h2>
-                <p class="about_paragraph">Hello I’m a software developer! I can help you build a product , feature or
+                <p class="about_paragraph hidden_desktop">Hello I’m a software developer! I can help you build a product
+                    , feature or
                     website Look through some of my work and experience! If you like what you see and have a project you
                     need coded, don’t hesitate to contact me.
                 </p>
+                <p class="about_paragraph hidden_mobile">
+                    Hey there! I can help you build a product, feature or website. Look through some of my work and
+                    experience! If you like what you see and have a project you need coded, don’t hesitate to contact
+                    me.
+                </p>
                 <button type="button" class="about_box_button">Get my resume</button>
                 <div class="about_image_container">
-                    <img class="png" src="resources/Frame.png" alt="image">
+                    <img class="png hidden_desktop" src="resources/Frame.png" alt="image">
+                    <img class="svg hidden_mobile" src="resources/Frame.svg" alt="image">
                 </div>
                 <img class="divider" src="resources/Devider.png" alt="">
             </div>
             <div class="skills">
-
                 <div class="check">
-                    <p class="skills_heading"> <i class="fa-sharp fa-solid fa-diamond fa-xs" > </i> Language</p>
+                    <p class="skills_heading"> <i class="fa-sharp fa-solid fa-diamond fa-xs"> </i> Language</p>
                     <ul class="ul_list">
                         <li>JavaScript</li>
                         <li>Ruby</li>
@@ -194,8 +239,9 @@
                         <li>Capybara</li>
                     </ul>
                 </div>
+
                 <div class="check">
-                    <p class="skills_heading"> <i class="fa-solid fa-circle fa-xs" > </i> Skills</p>
+                    <p class="skills_heading"> <i class="fa-solid fa-circle fa-xs"> </i> Skills</p>
                     <ul class="ul_list">
                         <li>Database Management</li>
                         <li>Version Control</li>
@@ -204,10 +250,43 @@
                         <li>Web Development</li>
                     </ul>
                 </div>
-
-
-            </section>
+            </div>>
+        </section>
     </main>
+    <footer>
+        <section class="centered-div">
+
+            <section class="description">
+                <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
+            </section>
+
+            <section class="form">
+                <form id="myForm" action="https://formspree.io/f/xeqwbzar" method="post">
+                    <input type="text" id="name" placeholder="Full name" maxlength="30" required>
+                    <input type="email" id="email" placeholder="Email address" required>
+                    <textarea id="message" name="message" placeholder="Write me something..." maxlength="500"
+                        required></textarea>
+                    <button type="submit">Get in touch</button>
+                </form>
+            </section>
+        </section>
+
+        <section class="bottom_navigation">
+            <div class="bottom_socials">
+                <ul class="social bottom_social">
+                    <li class="bottom_lists"><a href="#"> <img src="./resources/logo6.png" alt="logo"> </a></li>
+                    <li class="bottom_lists"><a href="#"> <img src="./resources/logo7.png" alt="logo"> </a></li>
+                    <li class="bottom_lists"><a href="#"> <img src="./resources/logo8.png" alt="logo"> </a></li>
+                    <li class="bottom_lists"><a href="#"> <img src="./resources/logo9.png" alt="logo"> </a></li>
+                    <li class="bottom_lists"><a href="#"> <img src="./resources/logo10.png" alt="logo"> </a></li>
+                </ul>
+            </div>
+            <div class="home_indicator hidden_desktop">
+                <hr>
+            </div>
+        </section>
+    </footer>
+
 </body>
 
 </html>

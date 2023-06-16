@@ -16,16 +16,710 @@ ul {
   list-style-type: none;
 }
 
-hr {
-  background: black;
-  width: 20.313rem;
+@media only screen and (min-width: 768px) {
+  /* code for making elements hidden */
+  .hidden_desktop {
+    display: none;
+    visibility: hidden;
+  }
+
+  /* Main code for designing is below */
+  .header_1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 55px 0 135px;
+  }
+
+  .heading_title {
+    font-style: normal;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+  }
+
+  .navbar {
+    display: flex;
+  }
+
+  .item-navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .item-navigation li a {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    margin: 0 1.25rem;
+  }
+
+  .headline {
+    flex-direction: column;
+    display: flex;
+    order: 1;
+    justify-content: center;
+    z-index: 1;
+    margin-left: 15px;
+  }
+
+  /* description section */
+  .description_section {
+    height: 580px;
+    background-color: #1c1a19;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .social-media-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social {
+    order: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .h1_heading {
+    line-height: 1.2;
+    font-size: 72px;
+    color: #ff6b00;
+    font-family: "Crete Round", serif;
+    font-style: normal;
+    font-weight: 100;
+    margin: 0 0 10px 16px;
+    width: fit-content;
+  }
+
+  .h3_heading {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    margin: 9px 0 18px 16px;
+  }
+
+  .paragraph {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    word-wrap: break-word;
+    color: white;
+    margin: 0 0 0 16px;
+    width: 566px;
+    height: 123px;
+    white-space: pre-line; /* Code for line break */
+  }
+
+  .description_section p::after {
+    content: "\A";
+    white-space: pre;
+  }
+
+  /* image object */
+  .image_container {
+    order: 3;
+    position: absolute;
+    top: -7px;
+    right: 0;
+    margin: 10px 0 0 0;
+    z-index: 2;
+    width: 40%;
+    height: 100%;
+  }
+
+  .image_container #desktop_v_img {
+    width: 100%;
+    height: 614px;
+  }
+
+  /* work section */
+  .work_section {
+    display: grid;
+    grid-template-areas: "title title title" "first_box first_box first_box" "box1 box2 box3" "box4 box5 box6";
+    justify-content: center;
+    grid-gap: 15px 10px;
+    background-color: white;
+    margin-bottom: 78px;
+  }
+
+  /* created a new div to easily align items */
+  .w-s {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: title;
+    margin: 90px 0 60px 0;
+  }
+
+  .work_section_title {
+    color: #091e42;
+    font-family: "Crete Round", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5rem;
+  }
+
+  .title-line {
+    width: 54vw;
+  }
+
+  /* styled the first box diffrently cause it did not had a bg img */
+  .first_box {
+    grid-area: first_box;
+    display: flex;
+    flex-flow: row;
+    width: 375px;
+    height: 416px;
+    margin: 0 0 -54px 0;
+  }
+
+  .first-box-img img {
+    width: 547px;
+  }
+
+  .first-box-text {
+    margin-left: 24px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+  }
+
+  .first_box h2 {
+    font-family: "Crete Round ", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 44px;
+    color: #091e42;
+    margin: 0;
+  }
+
+  .first_box p {
+    word-wrap: break-word;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #091e42;
+    width: 422px;
+    margin: 30px 0 8px 0;
+  }
+
+  .first_box_lang {
+    display: flex;
+    flex-flow: row;
+    width: 95%;
+    padding: 0;
+    margin-bottom: 24px;
+  }
+
+  .first_box_lang li {
+    background-color: transparent;
+    color: black;
+    width: fit-content;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0 11px 0 0;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  .first_box_button {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    background: #f55800;
+    width: 34%;
+    height: 10%;
+    color: white;
+    border: 0;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.7s;
+  }
+
+  /* Hover state */
+  .first_box_button:hover {
+    color: #ff6b00;
+    background-color: antiquewhite;
+    border: 1px solid #ff6b00;
+  }
+
+  /* Pressed state */
+  .first_box_button:active {
+    background: #c65504;
+    color: white;
+  }
+
+  /* Disabled state */
+  .first_box_button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  /* defining gird area to aligning */
+  .box1 {
+    background-image: url("./resources/desktop_1.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 1px solid #091e42;
+    filter: drop-shadow(0 48px 48px rgba(37, 47, 137, 0.08));
+    grid-area: box1;
+  }
+
+  .box2 {
+    background-image:
+      linear-gradient(
+        179.35deg,
+        rgba(38, 38, 38, 0) 0.85%,
+        rgba(38, 38, 38, 0.9) 84%
+      ),
+      url("/resources/desktop_2.svg");
+    grid-area: box2;
+  }
+
+  .box3 {
+    background-image:
+      linear-gradient(
+        179.35deg,
+        rgba(38, 38, 38, 0) 0.85%,
+        rgba(38, 38, 38, 0.9) 84%
+      ),
+      url("/resources/desktop_3.svg");
+    grid-area: box3;
+  }
+
+  .box4 {
+    background-image:
+      linear-gradient(
+        179.35deg,
+        rgba(38, 38, 38, 0) 0.85%,
+        rgba(38, 38, 38, 0.9) 84%
+      ),
+      url("./resources/desktop_1.svg");
+    grid-area: box4;
+  }
+
+  .box5 {
+    background-image:
+      linear-gradient(
+        179.35deg,
+        rgba(38, 38, 38, 0) 0.85%,
+        rgba(38, 38, 38, 0.9) 84%
+      ),
+      url("/resources/desktop_2.svg");
+    grid-area: box5;
+  }
+
+  .box6 {
+    background-image:
+      linear-gradient(
+        179.35deg,
+        rgba(38, 38, 38, 0) 0.85%,
+        rgba(38, 38, 38, 0.9) 84%
+      ),
+      url("/resources/desktop_3.svg");
+    grid-area: box6;
+  }
+
+  .box {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    word-wrap: break-word;
+    width: 20.438rem;
+    height: 24.125rem;
+    margin: 0 0 24px 0;
+    background-size: cover;
+    color: white;
+    padding-top: 10%;
+  }
+
+  .box h2 {
+    font-family: "Crete Round", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    margin: 40% 0 0 5%;
+    color: white;
+  }
+
+  .box p {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    width: 96%;
+    padding-left: 5%;
+    margin: 21px 0;
+  }
+
+  .lang_used {
+    display: flex;
+    flex-flow: row;
+    padding: 0%;
+    margin: 0 9px;
+  }
+
+  .lang_used li {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.201);
+    color: white;
+    padding: 10px;
+    margin: 0 0 5px 8px;
+  }
+
+  .box button {
+    margin-top: auto;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    background: #ff6b00;
+    width: 100%;
+    height: 3rem;
+    color: white;
+    border: 0;
+  }
+
+  /* Hover state */
+  .box button:hover {
+    color: #ff6b00;
+    background-color: antiquewhite;
+    border: 1px solid #ff6b00;
+  }
+
+  /* Pressed state */
+  .box button:active {
+    background: #c65504;
+    color: white;
+  }
+
+  /* Disabled state */
+  .box button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  /* aboutme section */
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #262626;
+    padding: 103px 37px 0 113px;
+  }
+
+  .about_section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 239px;
+  }
+
+  .h1_about {
+    color: #f55800;
+    font-family: "Crete Round", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 1.3;
+    letter-spacing: 0.37px;
+    width: fit-content;
+    margin: 0;
+  }
+
+  .about_paragraph {
+    font-size: 17px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    line-height: 32px;
+    word-wrap: break-word;
+    color: #f4f5f7;
+    width: 47%;
+    margin: 18px 0 34px 0;
+  }
+
+  .about_box_button {
+    letter-spacing: 0.9px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    background: #ff6b00;
+    width: 156px;
+    height: 48px;
+    color: white;
+    border: 0;
+    margin: 0;
+  }
+
+  /* Hover state */
+  .about_box_button:hover {
+    color: #ff6b00;
+    background-color: antiquewhite;
+    border: 1px solid #ff6b00;
+  }
+
+  /* Pressed state */
+  .about_box_button:active {
+    background: #c65504;
+    color: white;
+  }
+
+  /* Disabled state */
+  .about_box_button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  .svg {
+    position: absolute;
+    bottom: 30px;
+    right: -40px;
+    width: 418px;
+    height: auto;
+  }
+
+  .divider {
+    align-self: center;
+    position: absolute;
+    bottom: -136px;
+    left: 0;
+    width: 92%;
+    height: 19px;
+  }
+
+  .skills {
+    display: flex;
+    margin-bottom: 95px;
+  }
+
+  .check {
+    flex: 1;
+    margin-right: 10px;
+  }
+
+  .skills_heading {
+    display: flex;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+  }
+
+  .skills_heading i {
+    margin-right: 8px;
+  }
+
+  .ul_list {
+    margin: 3px 0 0 0;
+    color: white;
+    padding: 0;
+  }
+
+  .ul_list li {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    list-style: none;
+    margin: 24px 0 0 0;
+  }
+
+  .fa-xs {
+    color: #ff6b00;
+  }
+
+  /* footer section */
+
+  /* centered div */
+
+  .centered-div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 37px 0 106px;
+    margin-bottom: 180px;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .description p {
+    color: #262626;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.3;
+    height: 16.375rem;
+    width: 20.438rem;
+    margin: 0;
+    word-wrap: break-word;
+  }
+
+  #myForm {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 72px 0 0 0;
+    margin-left: 56px;
+  }
+
+  .form input,
+  .form textarea {
+    padding: 5px;
+    width: 100%;
+  }
+
+  .form input {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    padding-left: 1.125rem;
+    border: none;
+    border-bottom: 1px solid #dbd8d7;
+    height: 2.5rem;
+    width: 532px;
+    margin-bottom: 18px;
+  }
+
+  .form input::placeholder {
+    color: #979493;
+  }
+
+  .form textarea {
+    padding: 0.938rem 0 0 0.75rem;
+    background-color: #fbf8f7;
+    color: #1c1a19;
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    height: 7.125rem;
+    width: 542px;
+    margin: 8px 0 1.5rem 0;
+    border: none;
+  }
+
+  .form textarea::placeholder {
+    color: #3c3a39;
+  }
+
+  #myForm button {
+    padding: 0.625rem 1.25rem;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    background: #ff6b00;
+    width: 9.188rem;
+    height: 3rem;
+    color: white;
+    border: 0;
+    cursor: pointer;
+  }
+
+  /* Hover state */
+  #myForm button:hover {
+    color: #ff6b00;
+    background-color: antiquewhite;
+    border: 1px solid #ff6b00;
+  }
+
+  /* Pressed state */
+  #myForm button:active {
+    background: #c65504;
+    color: white;
+  }
+
+  /* Disabled state */
+  #myForm button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  /* bottom navigation */
+
+  .bottom_navigation {
+    border-top: 2px solid #dbd8d7;
+  }
+
+  .bottom_socials {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .bottom_social {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-@media only screen and (min-width: 375px) {
+/* mobile design  */
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  /* code for making elements hidden */
+  .hidden_mobile {
+    display: none;
+    visibility: hidden;
+  }
+
+  /* Main code for designing is below */
+
   /* header section */
   .heading_title {
     font-style: normal;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: bold;
     font-size: 16px;
     color: white;
@@ -53,19 +747,19 @@ hr {
 
   /* main section css */
   .description_section {
-    background-color: #1c1a19;
     display: flex;
     flex-flow: column;
     justify-content: center;
     height: 590px;
     align-content: center;
+    background-color: #1c1a19;
     position: relative;
   }
 
   .h1_heading {
     font-size: 3.5rem;
     color: #ff6b00;
-    font-family: 'Crete Round', serif;
+    font-family: "Crete Round", serif;
     font-style: normal;
     font-weight: 100;
     margin: 0 0 10px 16px;
@@ -76,14 +770,14 @@ hr {
     color: white;
     font-size: 1.5rem;
     font-style: normal;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: bold;
     margin: 0 0 10px 16px;
   }
 
   .paragraph {
     font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     word-wrap: break-word;
     color: white;
     margin: 0 16px;
@@ -130,9 +824,14 @@ hr {
 
   .work_section_title {
     margin: 24% 0 10% 0;
-    font-family: 'Crete Round', serif;
+    font-family: "Crete Round", serif;
     font-style: normal;
     font-size: 2.5rem;
+  }
+
+  .title-line {
+    background: black;
+    width: 20.313rem;
   }
 
   /* styled the first box diffrently cause it did not had a bg img */
@@ -239,7 +938,7 @@ hr {
 
   .box h2 {
     font-size: 32px;
-    font-family: 'Crete Round', serif;
+    font-family: "Crete Round", serif;
     font-style: normal;
     font-weight: 400;
     line-height: 44px;
@@ -248,7 +947,7 @@ hr {
   }
 
   .box p {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -266,7 +965,7 @@ hr {
   }
 
   .lang_used li {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     background-color: rgba(255, 255, 255, 0.201);
     color: white;
     padding: 10px;
@@ -275,7 +974,7 @@ hr {
 
   .box button {
     margin-top: auto;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: bold;
     font-size: 17px;
     background: #ff6b00;
@@ -324,19 +1023,21 @@ hr {
 
   .h1_about {
     color: #ff6b00;
-    font-family: 'Crete Round', serif;
-    font-size: 72px;
+    font-family: "Crete Round", serif;
     font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
     line-height: 88px;
     letter-spacing: 0.37px;
-    font-weight: 400;
     margin: 0 0 10px 16px;
     width: fit-content;
   }
 
   .about_paragraph {
     font-size: 1rem;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
     word-wrap: break-word;
     color: white;
     margin: 0 0 0 16px;
@@ -346,8 +1047,8 @@ hr {
 
   .about_box_button {
     margin-top: 5%;
-    font-family: 'Inter', sans-serif;
-    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
     font-size: 17px;
     background: #ff6b00;
     width: 43%;
@@ -393,12 +1094,21 @@ hr {
     align-self: center;
     position: relative;
     bottom: -201px;
-    max-width: 100%;
+    width: 92%;
+    height: 14px;
     height: auto;
   }
 
   .skills {
-    padding-top: 58%;
+    margin-bottom: 32px;
+    padding-top: 228px;
+  }
+
+  .skills_heading {
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
   }
 
   .check {
@@ -407,10 +1117,6 @@ hr {
     justify-content: center;
     align-items: center;
     margin: 0 0 -1.625rem 0;
-  }
-
-  .check img {
-    margin-left: 47px;
   }
 
   .ul_list {
@@ -422,7 +1128,9 @@ hr {
   }
 
   .ul_list li {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
     font-size: 22px;
     list-style: none;
     margin-bottom: 24%;
@@ -433,10 +1141,160 @@ hr {
     color: #ff6b00;
   }
 
-  .skills_heading {
+  /* Footer */
+
+  footer {
+    margin-top: 8%;
+    background-color: #fff;
+  }
+
+  .centered-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.625rem 0 0.625rem 0;
+    text-align: center;
+  }
+
+  .description p {
+    color: #262626;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    height: 16.375rem;
+    width: 20.438rem;
+    line-height: 1.3;
+    word-wrap: break-word;
+    white-space: pre-line; /* Code for line break */
+  }
+
+  .description p::after {
+    content: "\A";
+    white-space: pre;
+  }
+
+  #myForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.625rem;
+  }
+
+  .form input,
+  .form textarea {
+    margin-bottom: 0.625rem;
+    padding: 5px;
+    width: 200px;
+  }
+
+  .form input {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    padding-left: 1.125rem;
+    border: none;
+    border-bottom: 1px solid black;
+    height: 2.5rem;
+    width: 19.313rem;
+    margin-bottom: 7%;
+  }
+
+  .form input::placeholder {
+    color: #979493;
+  }
+
+  .form textarea {
+    padding: 0.938rem 0 0 0.75rem;
+    background-color: #fbf8f7;
+    color: #1c1a19;
     font-family: 'Inter', sans-serif;
-    font-size: 32px;
-    font-weight: bold;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    height: 7.125rem;
+    width: 20.363rem;
+    margin-bottom: 1.5rem;
+    border: none;
+  }
+
+  .form textarea::placeholder {
+    color: #3c3a39;
+  }
+
+  #myForm button {
+    padding: 0.625rem 1.25rem;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    background: #ff6b00;
+    width: 9.188rem;
+    height: 3rem;
     color: white;
+    border: 0;
+    cursor: pointer;
+  }
+
+  /* Hover state */
+  #myForm button:hover {
+    color: #ff6b00;
+    background-color: antiquewhite;
+    border: 1px solid #ff6b00;
+  }
+
+  /* Pressed state */
+  #myForm button:active {
+    background: #c65504;
+    color: white;
+  }
+
+  /* Disabled state */
+  #myForm button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  .bottom_navigation {
+    margin: 5.313rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #979493;
+  }
+
+  .bottom_social {
+    margin: 1rem 0 1.875rem 0;
+  }
+
+  .bottom_lists img {
+    color: #505f79;
+  }
+
+  .home_indicator hr {
+    width: 8.813rem;
+    height: 0.313rem;
+    border-radius: 0.375rem;
+    background-color: black;
+    border: 0;
+    margin-left: 1.063rem;
   }
 }
