@@ -780,8 +780,7 @@ ul {
     font-family: "Poppins", sans-serif;
     word-wrap: break-word;
     color: white;
-    margin: 0 0 0 16px;
-    width: 375px;
+    margin: 0 16px;
   }
 
   .social {
