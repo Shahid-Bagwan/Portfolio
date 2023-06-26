@@ -742,11 +742,10 @@ ul {
     font-size: 20px;
   }
 
-  
   .item-navigation {
     display: none;
   }
-/*  */
+
   .navbar1 {
     display: flex;
     flex-direction: column;
@@ -784,7 +783,7 @@ ul {
   }
 
   .nav_links {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -808,7 +807,7 @@ ul {
   }
 
   #tog_btn .fa-xmark {
-    color: #6F6C6B;
+    color: hsl(15, 2%, 43%);
   }
 
   #tog_btn .fa-bars {
