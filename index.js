@@ -1,10 +1,3 @@
-// const navToggle = document.getElementsByTagName('button')[0];
-// const links = document.querySelector('.item_navigation');
-// // console.log(navToggle);
-// navToggle.addEventListener('click', () => {
-//   links.classList.add.toggle('show_nav');
-// });
-
 document.addEventListener('DOMContentLoaded', () => {
   const navToggle = document.getElementsByTagName('button')[0];
   const title = document.getElementsByTagName('h1')[0];
@@ -26,10 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
     i.classList.toggle('fa-xs');
     i.classList.toggle('fa-solid');
     i.classList.toggle('fa-xmark');
-    // nav.classList.add('nav_positioning');
   }
-  // console.log(navToggle);
+
   navToggle.addEventListener('click', () => toggle());
 });
 
-// .navbar_toggle {
