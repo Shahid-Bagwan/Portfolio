@@ -146,6 +146,7 @@ ul {
   }
 
   .image_container #desktop_v_img {
+    background-image: url(resources/Illustration-header.png);
     width: 100%;
     height: 614px;
   }
@@ -721,7 +722,8 @@ ul {
     font-style: normal;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 24px;
     color: white;
   }
 
@@ -729,11 +731,88 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 23px;
+    padding: 10px 23px 0 23px;
   }
 
   .navbar {
     display: flex;
+    justify-content: flex-end;
+    width: 69vw;
+    padding-bottom: 2%;
+    font-size: 20px;
+  }
+
+  
+  .item-navigation {
+    display: none;
+  }
+/*  */
+  .navbar1 {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    padding-bottom: 2%;
+    font-size: 20px;
+  }
+
+  .test {
+    display: none;
+  }
+
+  .show_nav {
+    margin: 34px 0 0 0;
+    padding: 0;
+    display: flex;
+    width: 88%;
+    align-content: center;
+    height: 11.5rem;
+    flex-direction: column;
+    position: absolute;
+    left: 1.9375rem;
+    top: 2.125rem;
+  }
+
+  .item-navigation li {
+    width: 100%;
+    height: 2.125rem;
+    font-size: 25px;
+    justify-content: center;
+    border-bottom: 1px solid #6f6c6b;
+    margin-bottom: 1.6875rem;
+    padding: 0 0 16px 0;
+  }
+
+  .nav_links {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    padding-left: 3%;
+    text-decoration: none;
+    color: #fff5e1;
+  }
+
+  .navbar_toggle {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 30px;
+    color: #fff;
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    display: block;
+    text-align: right;
+  }
+
+  #tog_btn .fa-xmark {
+    color: #6F6C6B;
+  }
+
+  #tog_btn .fa-bars {
+    color: white;
   }
 
   /* aligned th image to left */
@@ -780,7 +859,8 @@ ul {
     font-family: "Poppins", sans-serif;
     word-wrap: break-word;
     color: white;
-    margin: 0 16px;
+    margin: 0 0 0 16px;
+    width: 375px;
   }
 
   .social {

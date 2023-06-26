@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Linked Stylesheet -->
-    <link rel="stylesheet" href="style.css">
     <!-- links to fonts used  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/abaf463a2b.js" crossorigin="anonymous"></script>
+   
+    <!-- Linked Stylesheet -->
+    <link rel="stylesheet" href="style.css">
     <title>Porfolio</title>
 </head>
 
@@ -20,16 +20,18 @@
     <header class="header_1">
         <h1 class="heading_title">My Logo</h1>
         <nav class="navbar">
-            <ul class="item-navigation hidden_mobile">
-                <li><a href="#">Portofilio</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#"><img src="resources/Icon - Mail.png" alt="Mail Icon"></a></li>
+            <button id="tog_btn" class="navbar_toggle hidden_desktop">
+                <i id="close_menu" class="fas fa-xs fa-bars"></i>
+            </button>
+            <ul class="item-navigation">
+                <li><a href="#" class="nav_links">Portofilio</a></li>
+                <li><a href="#" class="nav_links">About</a></li>
+                <li><a href="#" class="nav_links">Contact</a></li>
+                <li class="hidden_mobile"><a href="#" class="hidden_mobile"><img src="resources/Icon - Mail.png" alt="MailIcon"></a></li>
             </ul>
-            <img class="img2 hidden_desktop" src="./resources/menu.png" alt="Menu Icon">
         </nav>
     </header>
-
+    
     <!-- the main section starts from here -->
     <main>
         <section>
@@ -46,16 +48,16 @@
                 </div>
                 <div class="social-media-icons">
                     <ul class="social">
-                        <li class="lists"><a href="#"> <img src="./resources/logo1.png" alt="logo"> </a></li>
-                        <li class="lists"><a href="#"> <img src="./resources/logo2.png" alt="logo"> </a></li>
-                        <li class="lists"><a href="#"> <img src="./resources/logo3.png" alt="logo"> </a></li>
-                        <li class="lists"><a href="#"> <img src="./resources/logo4.png" alt="logo"> </a></li>
-                        <li class="lists"><a href="#"> <img src="./resources/logo5.png" alt="logo"> </a></li>
+                        <li class="lists"><a href="#"> <img src="./resources/logo1.png" alt="Github logo"> </a></li>
+                        <li class="lists"><a href="#"> <img src="./resources/logo2.png" alt="LinkedIn logo"> </a></li>
+                        <li class="lists"><a href="#"> <img src="./resources/logo3.png" alt="angellist logo"> </a></li>
+                        <li class="lists"><a href="#"> <img src="./resources/logo4.png" alt="twitter logo"> </a></li>
+                        <li class="lists"><a href="#"> <img src="./resources/logo5.png" alt="medium logo"> </a></li>
                     </ul>
                 </div>
                 <div class="image_container">
-                    <img id="desktop_v_img" src="./resources/Illustration-header.png" class="hidden_mobile" alt="">
-                    <img src="./resources/Illustration.png" class="hidden_desktop" alt="image">
+                    <img id="desktop_v_img" src="resources/Illustration-header.svg" class="hidden_mobile" alt="Illustration-header">
+                    <img src="resources/Illustration.png" class="hidden_desktop" alt="Illustration">
                 </div>
             </div>
         </section>
@@ -68,7 +70,7 @@
                 <div class="first_box">
                     <!-- desktop code -->
                     <div class="first-box-img hidden_mobile">
-                        <img src="./resources/Img Placeholder.svg" alt="Project Image">
+                        <img src="resources/Img Placeholder.svg" alt="Project Image">
                     </div>
                     <div class="first-box-text hidden_mobile">
                         <h2>Multi-Post Stories</h2>
@@ -88,10 +90,9 @@
                     </div>
 
                     <!-- mobile code -->
-                    <!-- had to make the desktop code diffrent cause it was causing design issue's
-                        and one of senior told me to do it this way.
-                    -->
-                    <img class="hidden_desktop" src="resources/Img Placeholder.png" alt="">
+                    <!-- had to make the desktop code diffrent cause it was causing design issue's and one of senior told me to do it this way.  -->
+
+                    <img class="hidden_desktop" src="resources/Img Placeholder.png" alt="Project Image">
                     <h2 class="hidden_desktop">Multi-Post Stories</h2>
                     <p class="hidden_desktop">A daily selection of privately personalized reads; no accounts or sign-ups
                         required. has been the industry's standard dummy text ever since the 1500s, when an unknown
@@ -215,14 +216,14 @@
                 </p>
                 <button type="button" class="about_box_button">Get my resume</button>
                 <div class="about_image_container">
-                    <img class="png hidden_desktop" src="resources/Frame.png" alt="image">
-                    <img class="svg hidden_mobile" src="resources/Frame.svg" alt="image">
+                    <img class="png hidden_desktop" src="resources/Frame.png" alt="Frame">
+                    <img class="svg hidden_mobile" src="resources/Frame.svg" alt="Frame">
                 </div>
                 <img class="divider" src="resources/Devider.png" alt="">
             </div>
             <div class="skills">
                 <div class="check">
-                    <p class="skills_heading"> <i class="fa-sharp fa-solid fa-diamond fa-xs"> </i> Language</p>
+                    <h2 class="skills_heading"> <i class="fa-sharp fa-solid fa-diamond fa-xs"> </i> Language</h2>
                     <ul class="ul_list">
                         <li>JavaScript</li>
                         <li>Ruby</li>
@@ -231,7 +232,7 @@
                     </ul>
                 </div>
                 <div class="check">
-                    <p class="skills_heading"> <i class="fa-sharp fa-solid fa-square fa-xs"> </i> Framework</p>
+                    <h2 class="skills_heading"> <i class="fa-sharp fa-solid fa-square fa-xs"> </i> Framework</h2>
                     <ul class="ul_list">
                         <li>React.js</li>
                         <li>Ruby on Rails</li>
@@ -241,7 +242,7 @@
                 </div>
 
                 <div class="check">
-                    <p class="skills_heading"> <i class="fa-solid fa-circle fa-xs"> </i> Skills</p>
+                    <h2 class="skills_heading"> <i class="fa-solid fa-circle fa-xs"> </i> Skills</h2>
                     <ul class="ul_list">
                         <li>Database Management</li>
                         <li>Version Control</li>
@@ -250,7 +251,7 @@
                         <li>Web Development</li>
                     </ul>
                 </div>
-            </div>>
+            </div>
         </section>
     </main>
     <footer>
@@ -274,11 +275,11 @@
         <section class="bottom_navigation">
             <div class="bottom_socials">
                 <ul class="social bottom_social">
-                    <li class="bottom_lists"><a href="#"> <img src="./resources/logo6.png" alt="logo"> </a></li>
-                    <li class="bottom_lists"><a href="#"> <img src="./resources/logo7.png" alt="logo"> </a></li>
-                    <li class="bottom_lists"><a href="#"> <img src="./resources/logo8.png" alt="logo"> </a></li>
-                    <li class="bottom_lists"><a href="#"> <img src="./resources/logo9.png" alt="logo"> </a></li>
-                    <li class="bottom_lists"><a href="#"> <img src="./resources/logo10.png" alt="logo"> </a></li>
+                    <li class="bottom_lists"><a href="#"> <img src="./resources/logo6.png" alt="Github logo"> </a></li>
+                    <li class="bottom_lists"><a href="#"> <img src="./resources/logo7.png" alt="LinkedIn logo"> </a></li>
+                    <li class="bottom_lists"><a href="#"> <img src="./resources/logo8.png" alt="anglelist logo"> </a></li>
+                    <li class="bottom_lists"><a href="#"> <img src="./resources/logo9.png" alt="twitter logo"> </a></li>
+                    <li class="bottom_lists"><a href="#"> <img src="./resources/logo10.png" alt="medium logo"> </a></li>
                 </ul>
             </div>
             <div class="home_indicator hidden_desktop">
@@ -286,7 +287,8 @@
             </div>
         </section>
     </footer>
-
+    <script src="https://kit.fontawesome.com/abaf463a2b.js" crossorigin="anonymous"></script>    
+<script src="index.js"></script>
 </body>
 
 </html>
