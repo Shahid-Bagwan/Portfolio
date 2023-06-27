@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const footer = document.getElementsByTagName('footer')[0];
   const nav = document.getElementsByTagName('nav')[0];
   const i = document.querySelector('#close_menu');
-  console.log(i);
   function toggle() {
     links.classList.toggle('show_nav');
     main.classList.toggle('test');
@@ -20,6 +19,5 @@ document.addEventListener('DOMContentLoaded', () => {
     i.classList.toggle('fa-solid');
     i.classList.toggle('fa-xmark');
   }
-
   navToggle.addEventListener('click', () => toggle());
 });
