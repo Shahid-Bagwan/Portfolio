@@ -23,4 +23,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
   navToggle.addEventListener('click', () => toggle());
 });
-
