@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // console.log(i);
   function toggle() {
     links.classList.toggle('show_nav');
-  main.classList.toggle('test');
+    main.classList.toggle('test');
     footer.classList.toggle('test');
     title.classList.toggle('test');
     nav.classList.toggle('navbar');

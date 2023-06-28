@@ -1732,7 +1732,6 @@ ul {
   .enable {
     width: 150px;
     height: 48px;
-    display: flex;
     justify-content: center;
     padding: 12px;
     gap: 12px;
