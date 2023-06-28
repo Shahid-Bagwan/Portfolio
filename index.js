@@ -6,8 +6,8 @@ const modalData = [
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry',
     img: './resources/Img Placeholder.png',
-    livelink: 'https://github.com/Shahid-Bagwan',
-    source: 'https://github.com/Shahid-Bagwan',
+    livelink: '#',
+    source: '#',
     class: 'modal-btn',
   },
   {
@@ -18,8 +18,8 @@ const modalData = [
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
     img: 'https://picsum.photos/200',
-    livelink: 'https://github.com/Shahid-Bagwan',
-    source: 'https://github.com/Shahid-Bagwan',
+    livelink: '#',
+    source: '#',
     class: 'modal-btn',
   },
   {
@@ -30,8 +30,8 @@ const modalData = [
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
     img: 'https://picsum.photos/200/300',
-    livelink: 'https://github.com/Shahid-Bagwan',
-    source: 'https://github.com/Shahid-Bagwan',
+    livelink: '#',
+    source: '#',
     class: 'modal-btn',
   },
   {
@@ -42,8 +42,8 @@ const modalData = [
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
     img: 'https://picsum.photos/200/300',
-    livelink: 'https://github.com/Shahid-Bagwan',
-    source: 'https://github.com/Shahid-Bagwan',
+    livelink: '#',
+    source: '#',
     class: 'modal-btn',
   },
   {
@@ -54,8 +54,8 @@ const modalData = [
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
     img: 'https://picsum.photos/200/300',
-    livelink: 'https://github.com/Shahid-Bagwan',
-    source: 'https://github.com/Shahid-Bagwan',
+    livelink: '#',
+    source: '#',
     class: 'modal-btn',
   },
   {
@@ -66,8 +66,8 @@ const modalData = [
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
     img: 'https://picsum.photos/200/300',
-    livelink: 'https://github.com/Shahid-Bagwan',
-    source: 'https://github.com/Shahid-Bagwan',
+    livelink: '#',
+    source: '#',
     class: 'modal-btn',
   },
   {
@@ -78,8 +78,8 @@ const modalData = [
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
     img: 'https://picsum.photos/200/300',
-    livelink: 'https://github.com/Shahid-Bagwan',
-    source: 'https://github.com/Shahid-Bagwan',
+    livelink: '#',
+    source: '#',
     class: 'modal-btn',
   },
 ];
