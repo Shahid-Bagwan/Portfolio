@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
   navLinks.forEach((link) => {
     link.addEventListener('click', () => toggle());
   });
-  
+
   function loadcontent() {
     modalData.forEach((project, index) => {
       let lang = '';
