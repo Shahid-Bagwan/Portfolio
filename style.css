@@ -748,7 +748,7 @@ ul {
     position: relative; /* Change to relative positioning */
     display: flex;
     flex-direction: column;
-    padding: 16px;
+    padding: 7px 16px 16px 26px;
     gap: 24px;
     width: 943px;
     height: 690px; /* Set a specific height for the creator-card section */
@@ -804,6 +804,7 @@ ul {
     gap: 8px;
     width: 100%;
     height: 40px;
+    margin: 0;
   }
 
   .links {
@@ -811,12 +812,12 @@ ul {
     justify-content: center;
     align-items: center;
     padding: 10px 12px;
-    width: 8rem;
+    width: fit-content;
     border: 1px solid #979493;
   }
 
   .thtml {
-    width: 39px;
+    width: fit-content;
     height: 20px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -833,7 +834,7 @@ ul {
   }
 
   .left-block {
-    margin-top: 3.5rem;
+    margin-top: 2.5rem;
     display: flex;
     padding: 0;
     gap: 12px;
@@ -854,12 +855,12 @@ ul {
   }
 
   .action {
-    width: 311px;
+    width: fit-content;
     height: 56px;
   }
 
   .enable {
-    width: 137px;
+    width: fit-content;
     height: 48px;
     color: white;
     background: #ff6b00;
@@ -869,11 +870,19 @@ ul {
     font-size: 17px;
     line-height: 24px;
     border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .down-ancor {
     text-decoration: none;
     color: white;
+  }
+
+  .enable svg {
+    margin-left: 11px; /* Adjust the spacing between the icon and text as needed */
+    vertical-align: middle;
   }
 
   /* Hover state */
@@ -1162,7 +1171,7 @@ ul {
     width: 95%;
     margin-top: 1%;
     margin-bottom: 4%;
-    margin-left: -28%;
+    margin-left: -10%;
   }
 
   .first_box_lang li {
@@ -1608,7 +1617,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 16px;
+    padding: 0 16px 16px 16px;
     gap: 24px;
     width: 343px;
     height: 690px; /* Set a specific height for the creator-card section */
@@ -1661,7 +1670,7 @@ ul {
     align-items: center;
     padding: 0;
     gap: 8px;
-    width: 85%;
+    width: 94%;
     height: 36px;
   }
 
@@ -1735,10 +1744,16 @@ ul {
     font-weight: 700;
     font-size: 17px;
     line-height: 24px;
+    display: inline-flex;
+    align-items: center;
   }
 
   .enable a {
     text-decoration: none;
     color: white;
+  }
+
+  .enable svg {
+    vertical-align: middle;
   }
 }
