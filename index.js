@@ -234,4 +234,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     // button.dataset.index = index;
   });
+
+  function validateEmail() {
+    const emailValue = document.getElementById('email').value;
+
+    if (emailValue.toLowerCase() !== emailValue) {
+      document.getElementById('emailError').innerHTML = 'The Email must be in lower case.';
+      return false;
+    }
+
+    return true;
+  }
+
+  document.getElementById('myForm').addEventListener('submit', (event) => {
+    event.preventDefault();
+    // Validate the email
+    const isValid = validateEmail();
+
+    // If the email is valid, submit the form
+    if (isValid) {
+      document.getElementById('myForm').submit();
+    }
+  });
 });

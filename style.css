@@ -21,6 +21,16 @@ ul {
   display: none;
 }
 
+#emailError {
+  color: red;
+  font-size: 17px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.51px;
+}
+
 @media only screen and (min-width: 768px) {
   /* code for making elements hidden */
   .hidden_desktop {
