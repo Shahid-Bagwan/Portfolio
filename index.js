@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.getElementById('myForm').addEventListener('submit', (event) => {
     event.preventDefault();
-
+    // checking for the email is verified or not
     // Validate the email
     const isValid = validateEmail();
 
