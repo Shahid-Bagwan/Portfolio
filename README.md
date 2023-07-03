@@ -26,6 +26,8 @@
 
 A website developed to showcase skills and projects done. 
 
+<img src="./portfolio.gif"/>
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
