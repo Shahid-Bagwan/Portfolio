@@ -161,7 +161,7 @@ ul {
   }
 
   .image_container #desktop_v_img {
-    background-image: url(resources/Illustration-header.png);
+    background-image: url(./resources/Illustration-header.png);
     width: 100%;
     height: 614px;
   }
